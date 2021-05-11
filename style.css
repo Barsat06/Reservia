@@ -1,0 +1,50 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#container
+{
+    width: 1440px;
+}
+
+/*Header*/
+
+header
+{
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo img
+{
+    width: 85px;
+}
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li
+{
+    padding-right: 50px;
+}
+
+nav ul li a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;                                                            
+}
+                                                        
+#sign_in
+{
+    color: #0065fc;
+    font-weight: 700;
+}
