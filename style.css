@@ -2,6 +2,7 @@
     --color-dark_blue: #0065fc;
     --color-light_blue: #DEEBFF;
     --color-grey: #F2F2F2;
+    --color-black: black;
 }
 
 body{
@@ -36,7 +37,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: black;
+    color: var(--color-black);
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -97,7 +98,7 @@ main{
 }
 
 #search_field input{
-    color: black;
+    color: var(--color-black);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -201,7 +202,7 @@ main{
     font-size: 14px;
 }
 
-/*Hébergement all*/
+/*Hébergements all*/
 
 #hebergement{
     display: flex;
@@ -228,7 +229,7 @@ main{
 }
 
 #cases_hebergement_all a{
-    color: black;
+    color: var(--color-black);
     text-decoration: none;
 }
 
@@ -271,7 +272,7 @@ main{
 }
 
 #plus a{
-    color: black;
+    color: var(--color-black);
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
@@ -344,4 +345,73 @@ main{
 
 .grey_star i{
     color: var(--color-grey);
+}
+
+/*Activités*/
+
+#activite h1{
+    font-size: 25px;
+    margin-top: 60px;
+}
+
+#cases_activite{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#column2, #column4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#cases_activite a{
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.div_activite{
+    width: 320px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
+}
+
+.img_activite_xlarge img{
+    width: 320px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+    display: block;
+}
+
+.img_activite_large img{
+    width: 320px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+    display: block;
+}
+
+.img_activite_medium img{
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+    display: block;
+}
+
+.img_activite_small img{
+    width: 320px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+    display: block;
+}
+
+.nom_activite p{
+    font-size: 18px;
+    margin: 0px;
+    padding: 15px;
+    font-weight: 700;
 }
