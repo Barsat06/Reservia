@@ -63,7 +63,6 @@ nav ul{
 
 nav ul li{
     height: 100%;
-    padding-right: 50px;
 }
 
 nav ul li a{
@@ -74,7 +73,7 @@ nav ul li a{
     height: 100%;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 30px;
+    padding: 0px 25px 30px 25px;
 }
 
 nav ul li a:hover{
@@ -91,12 +90,7 @@ nav ul li a:hover{
     display: flex;
     align-items: flex-end;
     padding-bottom: 30px;
-}
-
-/*Main*/
-
-main{
-    padding: 0px 40px;
+    padding-left: 25px;
 }
 
 /*Search*/
@@ -104,6 +98,7 @@ main{
 #search{
     display: flex;
     flex-direction: column;
+    padding: 0px 40px;
 }
 
 #search h1{
@@ -169,7 +164,8 @@ main{
 
 #filter_area{
     display: flex;
-    padding-top: 30px;
+    flex-wrap: wrap;
+    padding: 30px 40px 0px 40px;
 }
 
 #filter_area h2{
@@ -228,7 +224,7 @@ main{
 #info{
     display: flex;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px 40px 0px 40px;
 }
 
 #info i{
@@ -250,6 +246,7 @@ main{
     display: flex;
     margin-top: 30px;
     gap: 50px;
+    padding: 0px 40px;
 }
 
 #hebergement_all{
@@ -385,6 +382,10 @@ main{
 
 /*Activités*/
 
+#activite{
+    padding: 0px 40px;
+}
+
 #activite h1{
     font-size: 25px;
     margin-top: 60px;
@@ -509,7 +510,6 @@ footer{
     .div_hebergement_populaire{
         min-width: 315px;
     }
-
 }
 
 @media screen and (max-width: 1145px) {
@@ -527,4 +527,35 @@ footer{
     }
 
 
+}
+
+@media screen and (max-width: 705px) {
+
+    .img_activite_xlarge img, .img_activite_large img, .img_activite_medium img, .img_activite_small img{
+        height: 180px;
+    }
+    
+}
+
+@media screen and (max-width: 455px) {
+
+    button span{
+        display: none;
+    }
+
+    button i{
+        display: contents;
+    }
+
+    #hebergement{
+        padding: 0px;
+    }
+
+    #hebergement_populaire{
+        border-radius: 0px;
+    }
+
+    #hebergement_all{
+        background-color: white;
+    }
 }
